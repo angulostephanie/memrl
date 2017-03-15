@@ -1,0 +1,10 @@
+package main.java.myProj;
+
+public class TMazeGrid {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
