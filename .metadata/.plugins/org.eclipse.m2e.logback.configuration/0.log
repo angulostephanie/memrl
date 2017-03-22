@@ -124,3 +124,135 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2017-03-14 17:22:19,989 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
 2017-03-14 17:22:19,990 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-03-14 17:22:19,991 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-14 17:51:01,405 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-14 17:51:01,407 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-14 17:51:01,409 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-14 17:51:01,409 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-15 17:25:36,328 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-20 16:50:58,030 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-20 16:51:59,910 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:51:59,921 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-20 16:51:59,926 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:51:59,926 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-20 16:55:13,073 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:55:13,081 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-20 16:55:13,083 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:55:13,083 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-20 16:55:55,254 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:55:55,255 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-20 16:55:55,257 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 16:55:55,258 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-20 22:47:05,537 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 22:47:05,548 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-20 22:47:05,552 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-20 22:47:05,552 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-20 23:16:58,416 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-03-21 00:15:51,558 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-21 00:15:52,979 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.brown.cs.burlap:burlap_examples:3.0.0-SNAPSHOT @ /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap_examples-master/pom.xml.
+2017-03-21 00:15:54,025 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /burlap_examples-master/src/main/java
+2017-03-21 00:15:54,027 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /burlap_examples-master/src/test/java
+2017-03-21 00:15:59,335 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 7 sec
+2017-03-21 00:16:00,012 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:16:00,024 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap_examples-master/src/main/resources
+2017-03-21 00:16:00,028 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:16:00,029 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap_examples-master/src/test/resources
+2017-03-21 00:25:25,498 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:25:25,501 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap_examples-master/src/main/resources
+2017-03-21 00:25:25,507 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:25:25,508 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap_examples-master/src/test/resources
+2017-03-21 00:34:35,267 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:34:35,268 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 00:34:35,271 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:34:35,271 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 00:34:44,522 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:34:44,523 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 00:34:44,525 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:34:44,526 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 00:37:10,337 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:37:10,338 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 00:37:10,340 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 00:37:10,340 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 15:48:55,554 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 15:48:55,560 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 15:48:55,562 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 15:48:55,563 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:02:21,191 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:02:21,192 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:02:21,194 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:02:21,194 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:03:16,954 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:03:16,954 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:03:16,957 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:03:16,961 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:05:11,572 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:05:11,573 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:05:11,574 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:05:11,575 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:18:10,637 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:18:10,645 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:18:10,649 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:18:10,649 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:20:17,764 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:20:17,765 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:20:17,766 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:20:17,767 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:22:28,191 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:22:28,193 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:22:28,194 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:22:28,195 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:25:58,247 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:25:58,248 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:25:58,250 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:25:58,251 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:34:17,573 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:34:17,574 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:34:17,575 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:34:17,576 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:34:45,883 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:34:45,884 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:34:45,887 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:34:45,887 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:35:16,832 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:35:16,833 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:35:16,835 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:35:16,835 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:40:17,871 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:40:17,872 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:40:17,873 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:40:17,874 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:41:52,591 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:41:52,592 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:41:52,596 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:41:52,597 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:42:43,113 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:42:43,114 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:42:43,116 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:42:43,116 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:44:14,024 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:44:14,025 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:44:14,027 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:44:14,027 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 16:45:35,361 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:45:35,362 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 16:45:35,362 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 16:45:35,363 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 17:11:09,082 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:11:09,084 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 17:11:09,085 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:11:09,086 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 17:11:51,928 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:11:51,929 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 17:11:51,931 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:11:51,931 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 17:12:37,279 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:12:37,280 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 17:12:37,282 [Worker-77] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:12:37,282 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 17:13:02,093 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:13:02,094 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 17:13:02,095 [Worker-78] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:13:02,095 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-03-21 17:14:13,286 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:14:13,291 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-03-21 17:14:13,292 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-03-21 17:14:13,293 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources

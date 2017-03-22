@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="burlap.behavior.singleagent.learning.LearningAgent"/>
+<fullyQualifiedTypeName name="burlap.behavior.singleagent.learning.tdmethods.QLearning"/>
+<fullyQualifiedTypeName name="burlap.behavior.singleagent.Episode"/>
+<fullyQualifiedTypeName name="burlap.domain.singleagent.gridworld.GridWorldTerminalFunction"/>
+<fullyQualifiedTypeName name="burlap.domain.singleagent.gridworld.GridWorldRewardFunction"/>
+</qualifiedTypeNameHistroy>
