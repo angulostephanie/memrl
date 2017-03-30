@@ -1,0 +1,5 @@
+package myProj;
+
+public class MyEpisodeVisualizer extends EpisodeSequenceVisualizer {
+
+}
