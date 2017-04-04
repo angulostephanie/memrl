@@ -1,0 +1,7 @@
+package tmaze;
+
+public class State {
+	public Agent agent;
+	
+}
+

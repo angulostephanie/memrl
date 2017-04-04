@@ -1,0 +1,7 @@
+package tmaze;
+
+public class Agent {
+	public int x;
+	public int y;
+	
+}

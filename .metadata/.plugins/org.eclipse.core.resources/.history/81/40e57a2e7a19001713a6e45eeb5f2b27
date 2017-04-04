@@ -1,0 +1,12 @@
+package tmaze;
+
+
+public class Episode {
+	public Episode() {
+		
+	}
+	public Episode(State initState) {
+		
+	}
+	
+}

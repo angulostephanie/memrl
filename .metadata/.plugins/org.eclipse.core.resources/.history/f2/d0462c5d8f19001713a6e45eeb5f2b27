@@ -1,0 +1,13 @@
+package tmaze;
+
+public class State {
+	public Agent agent;
+	
+	public State() {
+		
+	}
+	public State(Agent agent, int x, int y) {
+		this(new Agent(x,y));
+	}
+}
+

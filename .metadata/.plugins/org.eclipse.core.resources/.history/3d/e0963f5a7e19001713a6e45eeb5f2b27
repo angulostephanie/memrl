@@ -1,0 +1,34 @@
+package tmaze;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import burlap.mdp.core.action.Action;
+import burlap.mdp.core.state.State;
+
+public class Episode {
+
+	public List<State> stateSequence = new ArrayList<State>();
+	public List<Action> actionSequence = new ArrayList<Action>();
+	/**
+	 * The sequence of rewards received. Note the reward stored at index i is the reward received at time step i+1.
+	 */
+	public List<Double>	rewardSequence = new ArrayList<Double>();
+	
+	
+	public Episode() {
+		
+	}
+	public Episode(State initState) {
+		
+	}
+	
+	public Action getAction(int time) {
+		return actionSequence.get(time);
+	}
+	
+	public State getState(int time) {
+		return stateSequence.get(time);
+	}
+	
+}

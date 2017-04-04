@@ -1,0 +1,15 @@
+package tmaze;
+
+public class Environment {
+	public Environment(Domain domain, State initState) {
+		
+	}
+	
+	public boolean isInTerminalState() {
+		
+		return false;
+	}
+	public void resetEnvironment() {
+		
+	}
+}
