@@ -3,6 +3,6 @@ package tmaze;
 public class Action {
 	
 	public String getActionName() {
-		return  "poo";
+		return  "o";
 	}
 }

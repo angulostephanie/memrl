@@ -5,7 +5,9 @@ public class TMazeTester {
 	
 	public static void main(String[] args) {
 		Domain tmazeGrid = new Domain(tmazeMap);
-
+		Agent a = new Agent(0,1);
+		State s = new State(a);
+		tmazeGrid.move(s, 1, 0);
+		System.out.println(a.getCurrentLocation());
 	}
-
 }

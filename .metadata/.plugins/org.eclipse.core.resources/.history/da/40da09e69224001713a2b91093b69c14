@@ -1,0 +1,17 @@
+package tmaze;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class State {
+	public Agent agent;
+	public List<Location> locations = new ArrayList<Location>();
+	
+	public State(Agent agent) {
+		this.agent = agent;
+	}
+	public State(int x, int y) {
+		this(new Agent(x,y));
+	}
+}
+

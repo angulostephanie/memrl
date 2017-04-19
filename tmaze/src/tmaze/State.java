@@ -7,6 +7,10 @@ public class State {
 	public Agent agent;
 	public List<Location> locations = new ArrayList<Location>();
 	
+	public State(Agent agent, List<Location> locations) {
+		this.agent = agent;
+		this.locations = locations;
+	}
 	public State(Agent agent) {
 		this.agent = agent;
 	}

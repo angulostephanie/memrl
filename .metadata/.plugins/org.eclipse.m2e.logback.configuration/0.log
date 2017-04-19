@@ -526,3 +526,10 @@ java.lang.NullPointerException: null
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519) [org.eclipse.equinox.launcher_1.3.201.v20161025-1711.jar:na]
+2017-04-04 19:38:08,571 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-04-10 22:44:57,969 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-04-11 00:24:54,519 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-11 00:24:54,537 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-04-11 00:24:54,541 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-04-11 00:24:54,542 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-04-18 15:43:18,951 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

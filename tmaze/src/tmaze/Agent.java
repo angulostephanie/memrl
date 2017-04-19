@@ -8,5 +8,8 @@ public class Agent {
 		this.x = x;
 		this.y = y;
 	}
-	
+	public int[][] getCurrentLocation() {
+		
+		return new int [x][y];
+	}
 }
