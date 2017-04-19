@@ -78,7 +78,8 @@ public class Domain {
 		}
 		throw new RuntimeException("Unknown action " + name);
 	}
-	protected State move(State s, int xd, int yd){
+	
+	public State move(State s, int xd, int yd){
 
 		State gws = (State)s;
 
@@ -94,12 +95,13 @@ public class Domain {
 				(yd > 0 && (map[ax][ay] == 2 || map[ax][ay] == 4)) || (yd < 0 && (map[nx][ny] == 2 || map[nx][ny] == 4)) ){
 			nx = ax;
 			ny = ay;
+			throw new RuntimeException("Obstacle! Cannot move in this direction");
 		}
 
-		Agent nagent = new Agent(nx, ny);
-				//gws.touchAgent();
-		//nagent.x = nx;
-		//nagent.y = ny;
+		Agent nagent = gws.updateAgent();
+		nagent.x = nx;
+		nagent.y = ny;
+		
 
 		return s;
 	}

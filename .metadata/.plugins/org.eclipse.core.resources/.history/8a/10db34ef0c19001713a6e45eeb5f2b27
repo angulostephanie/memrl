@@ -1,7 +1,0 @@
-package tmaze;
-
-public class Environment {
-	public Environment(Domain domain, State initState) {
-		
-	}
-}

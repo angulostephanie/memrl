@@ -5,4 +5,6 @@
 <fullyQualifiedTypeName name="burlap.behavior.singleagent.Episode"/>
 <fullyQualifiedTypeName name="burlap.domain.singleagent.gridworld.GridWorldTerminalFunction"/>
 <fullyQualifiedTypeName name="burlap.domain.singleagent.gridworld.GridWorldRewardFunction"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
