@@ -9,7 +9,7 @@ public class Environment {
 	}
 	
 	public boolean isInTerminalState() {
-		return false;
+		return this.terminated;
 	}
 	public void setCurStateTo(State s) {
 		this.curState = s;

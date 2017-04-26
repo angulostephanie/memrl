@@ -18,9 +18,6 @@ public class Agent {
 	public int getY() {
 		return y;
 	}
-//	public int[][] getCurrentLocation() {
-//		return new int [x][y];
-//	}
 	public Agent copy() {
 		return new Agent(x,y);
 	}

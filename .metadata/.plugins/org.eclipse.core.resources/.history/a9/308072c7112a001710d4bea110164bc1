@@ -1,0 +1,41 @@
+package tmaze;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class TerminalFunction1 {
+	protected Set<IntPair> terminalPositions = new HashSet<TerminalFunction1.IntPair>();
+	
+	public TerminalFunction1(int x, int y) {
+		this.terminalPositions.add(new IntPair(x,y));
+	}
+	public TerminalFunction(int x, int y) {
+		for(IntPair i: terminalPositions) {
+			this.terminalPositions.add(i);
+		}
+	}
+	
+	public class IntPair {
+		public int x;
+		public int y;
+		public IntPair(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+		@Override
+		public int hashCode() {
+			return this.x + 31*this.y;
+		}
+		@Override
+		public boolean equals(Object other) {
+			if(!(other instanceof IntPair)) {
+				return false;
+			}
+			IntPair o = (IntPair)other;
+			return this.x == o.x && this.y == o.y;
+		}
+	}
+	
+
+}
+

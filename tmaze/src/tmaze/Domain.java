@@ -89,13 +89,13 @@ public class Domain {
 		int nx = ax+xd;
 		int ny = ay+yd;
 
-		//hit wall, so do not change position
+		// do not change position
 		if(nx < 0 || nx >= map.length || ny < 0 || ny >= map[0].length || map[nx][ny] == 1 ||
 				(xd > 0 && (map[ax][ay] == 3 || map[ax][ay] == 4)) || (xd < 0 && (map[nx][ny] == 3 || map[nx][ny] == 4)) ||
 				(yd > 0 && (map[ax][ay] == 2 || map[ax][ay] == 4)) || (yd < 0 && (map[nx][ny] == 2 || map[nx][ny] == 4)) ){
 			nx = ax;
 			ny = ay;
-			throw new RuntimeException("Obstacle! Cannot move in this direction");
+			//throw new RuntimeException("Obstacle! Cannot move in this direction");
 		}
 
 		Agent nagent = gws.updateAgent();

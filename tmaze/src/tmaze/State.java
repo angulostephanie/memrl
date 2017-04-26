@@ -26,5 +26,9 @@ public class State {
 		this.agent = agent.copy();
 		return agent;
 	}
+	public List<Location> updateLocations() {
+		this.locations = new ArrayList<Location>(locations);
+		return locations;
+	} 
 }
 
