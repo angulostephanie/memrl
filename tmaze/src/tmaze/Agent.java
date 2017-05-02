@@ -21,4 +21,5 @@ public class Agent {
 	public Agent copy() {
 		return new Agent(x,y);
 	}
+	
 }

@@ -1,0 +1,27 @@
+package tmaze;
+
+public class Environment {
+	protected State currentState;
+	protected StateGenerator stateGenerator;
+	protected boolean terminated = false;
+	protected double lastReward = 0;
+	protected boolean allowActionFromTerminalStates = false;
+	
+	public Environment(Domain domain, State initState) {
+		this.currentState = initState;
+		this.stateGenerator = new StateGenerator(initState);
+	}
+	
+	public boolean isInTerminalState() {
+		return this.terminated;
+	}
+	public void setCurrentStateTo(State s) {
+		this.currentState = s;
+	}
+	public void resetEnvironment() {
+		this.lastReward = 0;
+		this.terminated = false;
+		//this.currentState = stateGenerator.generateState();
+	}
+	
+}

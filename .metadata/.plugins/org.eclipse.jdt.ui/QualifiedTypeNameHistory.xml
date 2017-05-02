@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="burlap.domain.singleagent.gridworld.GridWorldRewardFunction"/>
 <fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
 </qualifiedTypeNameHistroy>

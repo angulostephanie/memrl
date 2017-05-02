@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class State {
 	public Agent agent;
 	public List<Location> locations = new ArrayList<Location>();

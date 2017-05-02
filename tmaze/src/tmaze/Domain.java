@@ -11,10 +11,16 @@ public class Domain {
 	public static final String ACTION_SOUTH = "down";
 	public static final String ACTION_EAST = "right";
 	public static final String ACTION_WEST = "left";
+	protected RewardFunction rf;
+	protected TerminalFunction tf;
+	protected Model model;
 	protected int width;
 	protected int height;
 	protected int numLocationTypes = 1;
 	protected int [][] map;
+	//protected List<ActionType> actionTypes = new ArrayList<ActionType>();
+	//protected Map<String, ActionType>
+	//protected Model model;
 	
 	public Domain(int width, int height) {
 		this.width = width;
@@ -32,6 +38,17 @@ public class Domain {
 	
 	public void setNumberOfLocationTypes(int numLocationTypes){
 		this.numLocationTypes = numLocationTypes;
+	}
+	
+	public void setRf(RewardFunction rf) {
+		this.rf = rf;
+	}
+	
+	public void setTf(TerminalFunction tf) {
+		this.tf = tf;
+	}
+	public void setModel(Model model) {
+		this.model = model;
 	}
 	
 	public boolean invalidCell(int x, int y){
@@ -95,6 +112,7 @@ public class Domain {
 				(yd > 0 && (map[ax][ay] == 2 || map[ax][ay] == 4)) || (yd < 0 && (map[nx][ny] == 2 || map[nx][ny] == 4)) ){
 			nx = ax;
 			ny = ay;
+			System.out.println("Agent cannot move to location (" + (ax+xd) + ", " + (ay+yd) + ") because it does not exist in this environment!");
 			//throw new RuntimeException("Obstacle! Cannot move in this direction");
 		}
 
@@ -105,4 +123,8 @@ public class Domain {
 
 		return s;
 	}
+	public Model getModel() {
+		return model;
+	}
+	
 }
