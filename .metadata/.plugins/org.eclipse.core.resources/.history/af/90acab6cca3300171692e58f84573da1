@@ -1,0 +1,13 @@
+package tmaze;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Policy {
+	protected Random rand;
+	
+	public Policy() {
+		//rand = RandomFactory.getMapped(0);
+	}
+}

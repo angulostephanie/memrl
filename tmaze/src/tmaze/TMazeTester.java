@@ -31,6 +31,7 @@ public class TMazeTester {
 		
 		// create q learning object that's linked with agent
 		//run q learning agent and store results in a list
+		//QLearning learning = new QLearning();
 		List<Episode> episodes = new ArrayList<Episode>(1000);
 		for(int i = 0; i < 10; i++) {
 			System.out.println("********EPISODE #" + i + "********");

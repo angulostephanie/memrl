@@ -62,16 +62,16 @@ public class Domain {
 		int [] result = null;
 		switch (i) {
 			case 0:
-				result = new int[]{0,1};
+				result = new int[]{-1,0};
 				break;
 			case 1:
-				result = new int[]{0,-1};
-				break;
-			case 2:
 				result = new int[]{1,0};
 				break;
+			case 2:
+				result = new int[]{0,-1};
+				break;
 			case 3:
-				result = new int[]{-1,0};
+				result = new int[]{0,1};
 				break;
 			default:
 				break;
@@ -123,8 +123,56 @@ public class Domain {
 
 		return s;
 	}
+	public State move(State s, int action) {
+		State gws = (State)s;
+
+		int ax = gws.agent.x;
+		int ay = gws.agent.y;
+		int nx = ax;
+		int ny = ay;
+		if(action == 0) {
+			// up, north
+			nx = ax + -1;
+			ny = ay + 0;
+		} else if(action == 1) {
+			// down, south
+			nx = ax + 1;
+			ny = ay + 0;
+		} else if(action == 2) {
+			//west, left
+			nx = ax + 0;
+			ny = ay + -1;
+		} else if(action == 3) {
+			//east, right
+			nx = ax + 0;
+			ny = ay + 1;
+		} else {
+			throw new RuntimeException("Int has to be between 0 and 3");
+		}
+		
+		// do not change position
+		if(nx < 0 || nx >= map.length || ny < 0 || ny >= map[0].length || map[nx][ny] == 1){
+			nx = ax;
+			ny = ay;
+			System.out.println("Agent cannot move to location because it does not exist in this environment!");
+			//throw new RuntimeException("Obstacle! Cannot move in this direction");
+		}
+
+		Agent nagent = gws.updateAgent();
+		nagent.x = nx;
+		nagent.y = ny;
+		
+
+		return s; 
+	}
 	public Model getModel() {
 		return model;
+	}
+	public RewardFunction getRf() {
+		return rf;
+	}
+	public TerminalFunction getTf() {
+		return tf;
 	}
 	
 }

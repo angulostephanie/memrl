@@ -27,9 +27,9 @@ public class Episode {
 		rewardSequence.add(r);
 	}
 	public void transition(EnvironmentOutcome eo) {
-		//this.stateSequence.add(eo.op);
-		//this.actionSequence.add(eo.a);
-		//this.rewardSequence.add(eo.r);
+		this.stateSequence.add(eo.next);
+		this.actionSequence.add(eo.action);
+		this.rewardSequence.add(eo.r);
 	}
 	public Action getAction(int time) {
 		if(time == this.actionSequence.size()){

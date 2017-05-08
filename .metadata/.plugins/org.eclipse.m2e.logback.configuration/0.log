@@ -549,3 +549,12 @@ java.lang.NullPointerException: null
 2017-05-01 23:41:46,188 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
 2017-05-01 23:41:46,192 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-05-01 23:41:46,193 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-05-07 14:52:53,862 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-05-07 21:51:35,085 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-07 21:51:35,114 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-05-07 21:51:35,121 [Worker-79] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-07 21:51:35,123 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-05-08 01:51:08,327 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-08 01:51:08,339 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-05-08 01:51:08,343 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-08 01:51:08,343 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources

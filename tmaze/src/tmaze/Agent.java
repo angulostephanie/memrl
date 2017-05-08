@@ -4,6 +4,7 @@ public class Agent {
 	public int x;
 	public int y;
 	public String name;
+	
 	public Agent() {
 		this.name = "agent";
 	}
