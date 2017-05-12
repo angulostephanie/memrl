@@ -1,0 +1,118 @@
+package tmaze;
+
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+public abstract class MDPSolver {
+	protected Domain domain;
+	protected Model model;
+	protected HashableStateFactory hashingFactory;
+	protected double gamma;
+	protected List <Action> actionTypes;
+	protected int debugCode;
+	protected boolean usingOptionModel = false;
+
+	
+	public abstract void resetSolver();
+	
+
+	public void solverInit(Domain domain, double gamma, HashableStateFactory hashingFactory){
+
+		this.gamma = gamma;
+		this.hashingFactory = hashingFactory;
+		this.setDomain(domain);
+		
+	}
+	public void addActionType(Action a){
+		if(!actionTypes.contains(a)){
+			actionTypes.add(a);
+		}
+		
+	}
+
+	public void setModel(Model model) {
+		this.model = model;
+	}
+
+	public Model getModel() {
+		return this.model;
+	}
+
+	public void setActionTypes(List<Action> actionTypes){
+		this.actionTypes = actionTypes;
+	}
+
+
+	public List<Action> getActionTypes(){
+		return new ArrayList<Action>(this.actionTypes);
+	}
+
+	
+	public void setHashingFactory(HashableStateFactory hashingFactory) {
+		this.hashingFactory = hashingFactory;
+	}
+
+	public HashableStateFactory getHashingFactory(){
+		return this.hashingFactory;
+	}
+	
+	public double getGamma(){
+		return this.gamma;
+	}
+	
+	public void setGamma(double gamma){
+		this.gamma = gamma;
+	}
+
+	public void setDebugCode(int code){
+		this.debugCode = code;
+	}
+	
+
+	public int getDebugCode(){
+		return debugCode;
+	}
+	
+
+	public void toggleDebugPrinting(boolean toggle){
+		Map<Integer, Boolean> debugCodes = new HashMap<Integer, Boolean>();
+		debugCodes.put(debugCode, toggle);
+		//DPrint.toggleCode(debugCode, toggle);
+	}
+
+
+	public void setDomain(Domain domain) {
+		this.domain = domain;
+		if(this.domain != null) {
+
+			this.model = domain.getModel();
+
+			if(this.actionTypes != null) {
+				this.actionTypes.clear();
+			}
+			else{
+				this.actionTypes = new ArrayList<Action>(domain.getActionTypes().size());
+			}
+
+			List<Action> actionTypes = domain.getActionTypes();
+			this.actionTypes = new ArrayList<Action>(actionTypes.size());
+			for(Action a : actionTypes) {
+				this.actionTypes.add(a);
+			}
+		}
+	}
+
+	public Domain getDomain() {
+		return domain;
+	}
+
+	public HashableState stateHash(State s){2
+
+	protected List <Action> applicableActions(State s){
+		return Action.allApplicableActionsForTypes(this.actionTypes, s);
+	}
+}

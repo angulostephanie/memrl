@@ -111,7 +111,7 @@ public abstract class MDPSolver {
 	}
 
 	public HashableState stateHash(State s){
-		return hashingFactory.hashState(s);
+		return hashingFactory.hashState(s); 
 	}
 
 	protected List <Action> applicableActions(State s){

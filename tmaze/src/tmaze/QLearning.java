@@ -91,7 +91,7 @@ public class QLearning extends MDPSolver{
 	public Episode runLearningEpisode(Environment env, int maxSteps) {
 		State initState = env.currentObservation();
 		Episode ea = new Episode(initState);
-		HashableState currentState = this.stateHash(initState);
+		HashableState currentState = this.stateHash(initState); ///this one!!!
 		episodeStepCounter = 0;
 		
 		maxQChangeInLastEpisode = 0;

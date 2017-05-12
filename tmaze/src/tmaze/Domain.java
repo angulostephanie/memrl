@@ -190,7 +190,7 @@ public class Domain {
 		return this;
 	}
 	public Domain generateDomain() {
-		
+		Domain test = new Domain(getMap());
 		int[][] cmap = this.getMap();
 		TMazeModel tmodel = new TMazeModel(cmap, getTransitionDynamics());
 		RewardFunction rf = this.rf;
@@ -202,10 +202,10 @@ public class Domain {
 			throw new RuntimeException("Please create a terminal function");
 		
 		FactoredModel fmodel = new FactoredModel(tmodel, rf, tf);
-		domain.setModel(fmodel); //<---->
+		test.setModel(fmodel); //<---->
 		
-		domain.addActionTypes(new Action(ACTION_NORTH), new Action(ACTION_SOUTH), new Action(ACTION_EAST), new Action(ACTION_WEST));
-		return domain;
+		test.addActionTypes(new Action(ACTION_NORTH), new Action(ACTION_SOUTH), new Action(ACTION_EAST), new Action(ACTION_WEST));
+		return test;
 	}
 	
 	

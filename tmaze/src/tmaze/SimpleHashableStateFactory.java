@@ -16,7 +16,7 @@ public class SimpleHashableStateFactory implements HashableStateFactory {
 	}
 	@Override
 	public HashableState hashState(State s) {
-		return (HashableState)s;
+		return (HashableState)s; ////main error
 	}
 
 }

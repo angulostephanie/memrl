@@ -1,0 +1,7 @@
+package tmaze;
+
+public interface ObjectInstance extends StateInterface{
+	String className();
+	String name();
+	ObjectInstance copyWithName(String objectName);
+}

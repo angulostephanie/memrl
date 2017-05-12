@@ -38,7 +38,7 @@ public class TMazeTester {
 		QLearning learning = new QLearning(domain, 0.7, new SimpleHashableStateFactory(), 0, 0.9);
 		List<Episode> episodes = new ArrayList<Episode>(1000);
 		for(int i = 0; i < 10; i++) {
-			System.out.println("********ea #" + i + "********");
+			System.out.println("********EPISODE #" + i + "********");
 			Episode ea = learning.runLearningEpisode(env);
 			episodes.add(ea);
 			for(int j = 0; j < 10; j++) {
@@ -57,19 +57,6 @@ public class TMazeTester {
 			}
 			env.resetEnvironment();
 		}
-		//tmazeGrid.move(s, 1, 0);
-//		System.out.println(s.agent.getX());
-//		System.out.println(s.agent.getY());
-//		System.out.println();
-//		
-//		//tmazeGrid.move(s, 0, 1);
-//		System.out.println(s.agent.getX());
-//		System.out.println(s.agent.getY());
-//		
-//		System.out.println();
-//		//tmazeGrid.move(s, 0, 1);
-//		System.out.println(s.agent.getX());
-//		System.out.println(s.agent.getY());
 		
 	}
 	

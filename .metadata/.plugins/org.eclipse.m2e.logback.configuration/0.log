@@ -567,3 +567,7 @@ java.lang.NullPointerException: null
 2017-05-12 01:06:49,227 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
 2017-05-12 01:06:49,236 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-05-12 01:06:49,237 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources
+2017-05-12 09:24:56,822 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-12 09:24:56,830 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/main/resources
+2017-05-12 09:24:56,832 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-12 09:24:56,833 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/stephanieangulo/Desktop/cs-stuff/research/memrl/burlap/src/test/resources

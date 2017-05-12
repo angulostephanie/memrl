@@ -1,7 +1,7 @@
 package tmaze;
 
-import java.util.LinkedList;
-import java.util.List;
+//import java.util.LinkedList;
+//import java.util.List;
 
 public class Environment {
 	//protected List<EnvironmentObserver> observers = new LinkedList<EnvironmentObserver>();
