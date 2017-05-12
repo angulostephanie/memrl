@@ -1,0 +1,5 @@
+package tmaze;
+
+public interface SampleStateModel {
+
+}

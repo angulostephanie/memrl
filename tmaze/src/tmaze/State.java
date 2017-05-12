@@ -6,8 +6,9 @@ import java.util.List;
 
 public class State {
 	public Agent agent;
+	public State s;
 	public List<Location> locations = new ArrayList<Location>();
-	
+	public double p; // probability
 	public State(Agent agent, List<Location> locations) {
 		this.agent = agent;
 		this.locations = locations;
@@ -17,6 +18,10 @@ public class State {
 	}
 	public State(int x, int y) {
 		this(new Agent(x,y));
+	}
+	public State(State s, double p) {
+		this.s = s;
+		this.p = p;
 	}
 	public State copy() {
 		return new State(agent, locations);

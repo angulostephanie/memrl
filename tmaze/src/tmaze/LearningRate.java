@@ -12,6 +12,9 @@ public class LearningRate {
 	public double peekAtLearningRate(State state, Action action) {
 		return this.learningRate;
 	}
+	public double pollLearningRate(int agentTime, State s, Action ga) {
+		return this.learningRate;
+	}
 	public void resetDecay() {
 		
 	}

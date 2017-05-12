@@ -1,6 +1,8 @@
 package tmaze;
 
 import java.util.Random;
+
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -29,41 +31,45 @@ public class TMazeTester {
 		tmazeGrid.setRf(rewards);
 		tmazeGrid.setTf(endStates);
 		
+		Domain domain = tmazeGrid.generateDomain();
+		Environment env = new Environment(domain, s);
 		// create q learning object that's linked with agent
 		//run q learning agent and store results in a list
-		//QLearning learning = new QLearning();
+		QLearning learning = new QLearning(domain, 0.7, new SimpleHashableStateFactory(), 0, 0.9);
 		List<Episode> episodes = new ArrayList<Episode>(1000);
 		for(int i = 0; i < 10; i++) {
-			System.out.println("********EPISODE #" + i + "********");
+			System.out.println("********ea #" + i + "********");
+			Episode ea = learning.runLearningEpisode(env);
+			episodes.add(ea);
 			for(int j = 0; j < 10; j++) {
 				System.out.println("****STEP #" + j + "****");
-				/*if(j == 0) {
-					System.out.println("Action: " + ea.action(j));
-					System.out.println("State: " + ea.state(j));
+				if(j == 0) {
+					System.out.println("Action: " + ea.getAction(j));
+					System.out.println("State: " + ea.getState(j));
 				} else if (j >= (ea.numTimeSteps()) ) {
-					System.out.println("Action: " + ea.action(j));
-					System.out.println("State: " + ea.state(j));
+					System.out.println("Action: " + ea.getAction(j));
+					System.out.println("State: " + ea.getState(j));
 					System.out.println("Reward: " + ea.reward(j));
 				} else {
-					System.out.println("State: " + ea.state(j));
+					System.out.println("State: " + ea.getState(j));
 					System.out.println("Reward: " + ea.reward(j));
-				}*/
+				}
 			}
-			//env.resetEnvironment();
+			env.resetEnvironment();
 		}
-		tmazeGrid.move(s, 1, 0);
-		System.out.println(s.agent.getX());
-		System.out.println(s.agent.getY());
-		System.out.println();
-		
-		tmazeGrid.move(s, 0, 1);
-		System.out.println(s.agent.getX());
-		System.out.println(s.agent.getY());
-		
-		System.out.println();
-		tmazeGrid.move(s, 0, 1);
-		System.out.println(s.agent.getX());
-		System.out.println(s.agent.getY());
+		//tmazeGrid.move(s, 1, 0);
+//		System.out.println(s.agent.getX());
+//		System.out.println(s.agent.getY());
+//		System.out.println();
+//		
+//		//tmazeGrid.move(s, 0, 1);
+//		System.out.println(s.agent.getX());
+//		System.out.println(s.agent.getY());
+//		
+//		System.out.println();
+//		//tmazeGrid.move(s, 0, 1);
+//		System.out.println(s.agent.getX());
+//		System.out.println(s.agent.getY());
 		
 	}
 	

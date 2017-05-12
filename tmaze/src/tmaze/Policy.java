@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.management.RuntimeErrorException;
+
 public class Policy {
 	protected Random rand;
 	protected QProvider qPlanner;
+	
 	public Policy() {
 		qPlanner = null;
 		rand = RandomFactory.getMapped(0);
@@ -15,9 +18,11 @@ public class Policy {
 		qPlanner = planner;
 		rand = RandomFactory.getMapped(0);
 	}
-	public void setSolver() {
-		
-		//this.qPlanner = (QProvider) solver;
+	public void setSolver(MDPSolver solver) {
+		if(!(solver instanceof QProvider)) {
+			throw new RuntimeErrorException(new Error("Planner is not a QComputablePlanner"));
+		}
+		this.qPlanner = (QProvider) solver;
 	}
 	public double actionProb(State s, Action a) {
 		List<ActionProb> probs = policyDistribution(s);

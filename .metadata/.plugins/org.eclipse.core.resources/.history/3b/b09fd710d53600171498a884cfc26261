@@ -1,0 +1,65 @@
+package tmaze;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class QLearning {
+	protected Map<HashableState, QLearningStateNode> qFunction;
+	protected QFunction qInitFunction;
+	protected LearningRate learningRate;
+	//protected Policy learningPolicy;
+	protected int maxEpisodeSize;
+	protected int episodeStepCounter;
+	protected int numEpisodesForPlanning;
+	protected double maxQChangeForPlanningTermination;
+	protected double maxQChangeInLastEpisode = Double.POSITIVE_INFINITY;
+	protected boolean shouldDecomposeOptions = true;
+	protected int totalNumberOfSteps = 0;
+	
+	public QLearning(Domain domain, double gamma, HashableStateFactory hashingFactory, double qInit, double learningRate) {
+		
+	}
+	protected void QLInit(Domain domain, double gamma, HashableStateFactory hashingFactory, QFunction qInitFunction, double learningRate,
+			Policy learningPolicy, int maxEpisodeSize) {
+		this.solverInit(domain, gamma, hashingFactory);
+		this.qFunction = new HashMap<HashableState, QLearningStateNode>();
+		this.learningRate = new LearningRate(learningRate);
+		this.maxEpisodeSize = maxEpisodeSize;
+		this.qInitFunction = qInitFunction;
+		
+		numEpisodesForPlanning = 1;
+		maxQChangeForPlanningTermination = 0;
+	}
+	public Episode runLearningEpisode(Environment env) {
+		return this.runLearningEpisode(env, -1);
+	}
+//	public Episode runLearningEpisode(Environment env, int maxSteps) {
+//		State initState = env.currentObservation();
+//		Episode ea = new Episode(initState);
+//		HashableState currentState = this.stateHash(initState);
+//		episodeStepCounter = 0;
+//		
+//		maxQChangeInLastEpisode = 0;
+//		while(!env.isInTerminalState() && (episodeStepCounter < maxSteps || maxSteps == -1)) {
+//			//Action action = learningPolicy.action(currentState.s());
+//			//QValue curQ = this.getQ(currentState, action);
+//			EnvironmentOutcome eo;
+//			if() {
+//				
+//			} else {
+//				
+//			}
+//			
+//			//HashableState nextState = this.stateHash(eo.next);
+//			if() {
+//				
+//			}
+//			
+//			if() {
+//				
+//			}
+//			} else {
+//				
+//			}
+//	}
+}

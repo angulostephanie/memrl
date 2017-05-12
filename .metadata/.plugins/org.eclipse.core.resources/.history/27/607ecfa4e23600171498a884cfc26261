@@ -1,0 +1,14 @@
+package tmaze;
+import tmaze.Domain.TMazeModel;
+
+public class FactoredModel implements Model {
+	protected TMazeModel tmodel;
+	protected RewardFunction rf;
+	protected TerminalFunction tf;
+	
+	public FactoredModel(TMazeModel tmodel, RewardFunction rf, TerminalFunction tf) {
+		this.tmodel = tmodel;
+		this.rf = rf;
+		this.tf =tf;
+	}
+}

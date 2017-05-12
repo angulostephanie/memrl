@@ -1,0 +1,42 @@
+package tmaze;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Action {
+	public String name;
+	public Action action;
+	public List<Action> allActions;
+	
+	public Action() {
+		
+	}
+	public Action(String name) {
+		this.name = name;
+	}
+	
+	public String getActionName() {
+		return name;
+	}
+	public String typeName() {
+		return name;
+	}
+	public Action copy() {
+		return new Action(name);
+	}
+	public Action associatedAction(String strRep) {
+		return action;
+	}
+	public List<Action> allApplicableActions(State s) {
+		return allActions;
+	}
+	
+	public List<Action> allApplicableActionsForTypes(List<Action> actionTypes, State s){
+		List<Action> res = new ArrayList<Action>();
+		for(Action a : actionTypes){
+			res.addAll(a.allApplicableActions(s));
+		}
+		return res;
+	}
+}

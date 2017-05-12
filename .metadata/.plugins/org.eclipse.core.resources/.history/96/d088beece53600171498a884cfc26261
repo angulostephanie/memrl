@@ -1,0 +1,128 @@
+package tmaze;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.management.RuntimeErrorException;
+
+
+public class QLearning extends MDPSolver{
+	protected Map<HashableState, QLearningStateNode> qFunction;
+	protected QFunction qInitFunction;
+	protected LearningRate learningRate;
+	protected Policy learningPolicy;
+	protected int maxEpisodeSize;
+	protected int episodeStepCounter;
+	protected int numEpisodesForPlanning;
+	protected double maxQChangeForPlanningTermination;
+	protected double maxQChangeInLastEpisode = Double.POSITIVE_INFINITY;
+	protected boolean shouldDecomposeOptions = true;
+	protected int totalNumberOfSteps = 0;
+	
+	public QLearning(Domain domain, double gamma, HashableStateFactory hashingFactory, double qInit, double learningRate) {
+		
+	}
+	
+	protected void QLInit(Domain domain, double gamma, HashableStateFactory hashingFactory, QFunction qInitFunction, double learningRate,
+			Policy learningPolicy, int maxEpisodeSize) {
+		this.solverInit(domain, gamma, hashingFactory);
+		this.qFunction = new HashMap<HashableState, QLearningStateNode>();
+		this.learningRate = new LearningRate(learningRate);
+		this.maxEpisodeSize = maxEpisodeSize;
+		this.qInitFunction = qInitFunction;
+		
+		numEpisodesForPlanning = 1;
+		maxQChangeForPlanningTermination = 0;
+	}
+	protected QLearningStateNode getStateNode(HashableState s){
+		
+		QLearningStateNode node = qFunction.get(s);
+		
+		if(node == null){
+			node = new QLearningStateNode(s);
+			List<Action> gas = this.applicableActions(s.s());
+			if(gas.isEmpty()){
+				gas = this.applicableActions(s.s());
+				throw new RuntimeErrorException(new Error("No possible actions in this state, cannot continue Q-learning"));
+			}
+			for(Action ga : gas){
+				node.addQValue(ga, qInitFunction.qValue(s.s(), ga));
+			}
+			
+			qFunction.put(s, node);
+		}
+		
+		return node;
+		
+	}
+	protected QValue getQ(HashableState s, Action a) {
+		QLearningStateNode node = this.getStateNode(s);
+		
+		for(QValue qv : node.qEntry) {
+			if(qv.action.equals(a)) {
+				return qv;
+			}
+		}
+		return null;
+	}
+	
+	protected List<QValue> getQs(HashableState s) {
+		QLearningStateNode node = this.getStateNode(s);
+		return node.qEntry;
+	}
+	
+	protected double getMaxQ(HashableState s){
+		List <QValue> qs = this.getQs(s);
+		double max = Double.NEGATIVE_INFINITY;
+		for(QValue q : qs){
+			if(q.q > max){
+				max = q.q;
+			}
+		}
+		return max;
+	}
+	
+	public Episode runLearningEpisode(Environment env) {
+		return this.runLearningEpisode(env, -1);
+	}
+	
+	public Episode runLearningEpisode(Environment env, int maxSteps) {
+		State initState = env.currentObservation();
+		Episode ea = new Episode(initState);
+		HashableState currentState = this.stateHash(initState);
+		episodeStepCounter = 0;
+		
+		maxQChangeInLastEpisode = 0;
+		while(!env.isInTerminalState() && (episodeStepCounter < maxSteps || maxSteps == -1)) {
+			Action action = learningPolicy.action(currentState.s());
+			QValue curQ = this.getQ(currentState, action);
+			
+			EnvironmentOutcome eo;	
+			eo = env.executeAction(action);
+			
+			HashableState nextState = this.stateHash(eo.next);
+			double maxQ = 0;
+			if(!eo.terminated) {
+				maxQ = this.getMaxQ(nextState);
+			}
+			
+			double r = eo.r;
+			double discount = eo instanceof EnvironmentOptionOutcome ? ((EnvironmentOptionOutcome)eo).discount : this.gamma;
+			int stepInc = eo instanceof EnvironmentOptionOutcome ? ((EnvironmentOptionOutcome)eo).numSteps() : 1;
+			eStepCounter += stepInc;
+			
+			ea.transition(action, nextState.s(), r);
+			double oldQ = curQ.q;
+			//curQ.q = curQ.q + this.learningRate.p
+		}
+		return ea;
+	}
+	@Override
+	public void resetSolver() {
+		this.qFunction.clear();
+		this.eStepCounter = 0;
+		this.maxQChangeInLastEpisode = Double.POSITIVE_INFINITY;
+		
+	}
+}

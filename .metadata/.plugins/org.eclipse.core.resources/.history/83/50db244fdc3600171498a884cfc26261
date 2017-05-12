@@ -1,0 +1,10 @@
+package tmaze;
+
+public class StateTransitionProb {
+	public State s;
+	public double p;
+	public StateTransitionProb() {
+		
+	}
+	
+}

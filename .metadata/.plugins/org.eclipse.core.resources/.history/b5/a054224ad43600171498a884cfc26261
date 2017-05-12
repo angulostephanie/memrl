@@ -1,0 +1,5 @@
+package tmaze;
+
+public abstract class MDPSolver {
+
+}
